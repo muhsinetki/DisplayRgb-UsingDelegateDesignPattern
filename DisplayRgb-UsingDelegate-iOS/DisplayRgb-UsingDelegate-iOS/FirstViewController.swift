@@ -17,7 +17,6 @@ class FirstViewController: UIViewController{
     }
     
     @IBAction func colorButtonPressed(_ sender: UIButton) {
-        
         if let selectionVC = storyboard?.instantiateViewController(withIdentifier: "SecondViewController") as? SecondViewController {
             selectionVC.delegate = self
             present(selectionVC, animated: true, completion: nil)
